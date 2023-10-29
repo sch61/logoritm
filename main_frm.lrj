@@ -1,0 +1,17 @@
+{"version":1,"strings":[
+{"hash":256711488,"name":"tmainform.caption","sourcebytes":[208,155,208,190,208,179,208,190,209,128,208,184,209,130,208,188,208,184,208,186,208,176],"value":"\u041B\u043E\u0433\u043E\u0440\u0438\u0442\u043C\u0438\u043A\u0430"},
+{"hash":106991073,"name":"tmainform.toolbar1.caption","sourcebytes":[84,111,111,108,66,97,114,49],"value":"ToolBar1"},
+{"hash":84158417,"name":"tmainform.statbar.panels[0].text","sourcebytes":[208,146,208,181,209,128,209,129,208,184,209,143,32,49,46,49,46,48,46,49,49,49],"value":"\u0412\u0435\u0440\u0441\u0438\u044F 1.1.0.111"},
+{"hash":231414059,"name":"tmainform.menuitem1.caption","sourcebytes":[208,164,208,176,208,185,208,187,209,139],"value":"\u0424\u0430\u0439\u043B\u044B"},
+{"hash":161362024,"name":"tmainform.menuitem2.caption","sourcebytes":[208,161,208,191,209,128,208,176,208,178,208,190,209,135,208,189,208,184,208,186,208,184],"value":"\u0421\u043F\u0440\u0430\u0432\u043E\u0447\u043D\u0438\u043A\u0438"},
+{"hash":77929336,"name":"tmainform.menuitem3.caption","sourcebytes":[208,175,208,183,209,139,208,186,208,184],"value":"\u042F\u0437\u044B\u043A\u0438"},
+{"hash":29528600,"name":"tmainform.menuitem4.caption","sourcebytes":[208,148,208,181,209,130,208,184],"value":"\u0414\u0435\u0442\u0438"},
+{"hash":256221023,"name":"tmainform.menuitem5.caption","sourcebytes":[208,163,208,191,209,128,208,176,208,182,208,189,208,181,208,189,208,184,209,143],"value":"\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u044F"},
+{"hash":136479455,"name":"tmainform.menuitem6.caption","sourcebytes":[208,151,208,176,208,189,209,143,209,130,208,184,209,143],"value":"\u0417\u0430\u043D\u044F\u0442\u0438\u044F"},
+{"hash":145699860,"name":"tmainform.menuitem8.caption","sourcebytes":[208,146,209,139,209,133,208,190,208,180],"value":"\u0412\u044B\u0445\u043E\u0434"},
+{"hash":136479455,"name":"tmainform.menuitem7.caption","sourcebytes":[208,151,208,176,208,189,209,143,209,130,208,184,209,143],"value":"\u0417\u0430\u043D\u044F\u0442\u0438\u044F"},
+{"hash":1676293,"name":"tmainform.menuitem11.caption","sourcebytes":[208,164,208,190,209,128,208,188,208,184,209,128,208,190,208,178,208,176,208,189,208,184,208,181],"value":"\u0424\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435"},
+{"hash":26558981,"name":"tmainform.menuitem12.caption","sourcebytes":[208,159,209,128,208,190,208,178,208,181,208,180,208,181,208,189,208,184,208,181],"value":"\u041F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435"},
+{"hash":1148673,"name":"tmainform.menuitem9.caption","sourcebytes":[208,161,208,181,209,128,208,178,208,184,209,129],"value":"\u0421\u0435\u0440\u0432\u0438\u0441"},
+{"hash":143894408,"name":"tmainform.menuitem10.caption","sourcebytes":[208,157,208,176,209,129,209,130,209,128,208,190,208,185,208,186,208,184],"value":"\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"}
+]}

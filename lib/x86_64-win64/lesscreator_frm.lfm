@@ -1,0 +1,921 @@
+object frmLessCreator: TfrmLessCreator
+  Left = 354
+  Height = 504
+  Top = 194
+  Width = 754
+  Caption = 'Формирование занятия'
+  ClientHeight = 504
+  ClientWidth = 754
+  OnClose = FormClose
+  OnCreate = FormCreate
+  SessionProperties = 'DBGrid1.Columns;DBGrid2.Columns;DBGrid3.Columns;DBGrid4.Columns;DBGrid5.Columns;Height;Left;Position;Top;Width'
+  LCLVersion = '3.0.0.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 754
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 754
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 646
+      Height = 38
+      Top = 1
+      Width = 107
+      Align = alRight
+      AutoSize = True
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 464
+    Top = 40
+    Width = 160
+    Align = alLeft
+    Caption = 'Panel2'
+    ClientHeight = 464
+    ClientWidth = 160
+    TabOrder = 1
+    object DBNavigator1: TDBNavigator
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 158
+      Align = alTop
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 158
+      DataSource = dsLessons
+      Options = []
+      TabOrder = 0
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
+    end
+    object DBGrid1: TDBGrid
+      Left = 1
+      Height = 437
+      Top = 26
+      Width = 158
+      Align = alClient
+      Color = clWindow
+      Columns = <      
+        item
+          Title.Caption = 'id'
+          Visible = False
+          FieldName = 'id'
+        end      
+        item
+          Title.Caption = 'Дата'
+          Width = 80
+          FieldName = 'l_date'
+        end      
+        item
+          Title.Caption = 'Час'
+          Width = 40
+          FieldName = 'l_hour'
+        end      
+        item
+          Title.Caption = 'Коммент'
+          Visible = False
+          FieldName = 'comment'
+        end>
+      DataSource = dsLessons
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ReadOnly = True
+      TabOrder = 1
+    end
+  end
+  object Panel3: TPanel
+    Left = 160
+    Height = 464
+    Top = 40
+    Width = 594
+    Align = alClient
+    ClientHeight = 464
+    ClientWidth = 594
+    TabOrder = 2
+    object DBGroupBox1: TDBGroupBox
+      Left = 1
+      Height = 87
+      Top = 1
+      Width = 592
+      Align = alTop
+      Caption = 'Урок'
+      ClientHeight = 70
+      ClientWidth = 590
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 8
+        Height = 16
+        Top = 2
+        Width = 30
+        Caption = 'Дата'
+      end
+      object DBEdit1: TDBEdit
+        Left = 8
+        Height = 40
+        Top = 24
+        Width = 135
+        DataField = 'l_date'
+        DataSource = dsLessons
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 161
+        Height = 16
+        Top = 2
+        Width = 69
+        Caption = 'Время(час)'
+      end
+      object DBEdit2: TDBEdit
+        Left = 160
+        Height = 40
+        Top = 24
+        Width = 80
+        DataField = 'l_hour'
+        DataSource = dsLessons
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object DBMemo1: TDBMemo
+        Left = 267
+        Height = 70
+        Top = 0
+        Width = 323
+        Align = alRight
+        DataField = 'comment'
+        DataSource = dsLessons
+        TabOrder = 2
+      end
+    end
+    object Panel4: TPanel
+      AnchorSideLeft.Control = DBGroupBox1
+      AnchorSideLeft.Side = asrBottom
+      Left = 1
+      Height = 375
+      Top = 88
+      Width = 592
+      Align = alClient
+      ClientHeight = 375
+      ClientWidth = 592
+      TabOrder = 1
+      object GroupBox1: TGroupBox
+        Left = 1
+        Height = 373
+        Top = 1
+        Width = 287
+        Align = alLeft
+        Caption = 'Дети'
+        ClientHeight = 356
+        ClientWidth = 285
+        TabOrder = 0
+        object DBGrid2: TDBGrid
+          Left = 0
+          Height = 160
+          Top = 0
+          Width = 285
+          Align = alTop
+          Color = clWindow
+          Columns = <          
+            item
+              Title.Caption = 'id'
+              Visible = False
+              FieldName = 'id'
+            end          
+            item
+              Title.Caption = 'less_id'
+              Visible = False
+              FieldName = 'less_id'
+            end          
+            item
+              Title.Caption = 'child_id'
+              Visible = False
+              FieldName = 'child_id'
+            end          
+            item
+              Title.Caption = 'Имя'
+              Width = 100
+              FieldName = 'fname'
+            end          
+            item
+              Title.Caption = 'Фамилия'
+              Width = 100
+              FieldName = 'sname'
+            end>
+          DataSource = dsLessChild
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object Panel5: TPanel
+          Left = 0
+          Height = 41
+          Top = 160
+          Width = 285
+          Align = alTop
+          ClientHeight = 41
+          ClientWidth = 285
+          TabOrder = 1
+          object btInCh: TBitBtn
+            Left = 72
+            Height = 40
+            Top = 0
+            Width = 40
+            AutoSize = True
+            HotImageIndex = 3
+            Images = DMmydb.imgList
+            ImageIndex = 3
+            OnClick = btInChClick
+            TabOrder = 0
+          end
+          object btOutCh: TBitBtn
+            Left = 176
+            Height = 40
+            Top = 0
+            Width = 40
+            AutoSize = True
+            HotImageIndex = 2
+            Images = DMmydb.imgList
+            ImageIndex = 2
+            OnClick = btOutChClick
+            TabOrder = 1
+          end
+        end
+        object DBGrid3: TDBGrid
+          Left = 0
+          Height = 155
+          Top = 201
+          Width = 285
+          Align = alClient
+          Color = clWindow
+          Columns = <          
+            item
+              Title.Caption = 'id'
+              Visible = False
+              FieldName = 'id'
+            end          
+            item
+              Title.Caption = 'Имя'
+              Width = 100
+              FieldName = 'fname'
+            end          
+            item
+              Title.Caption = 'Фамилия'
+              Width = 150
+              FieldName = 'sname'
+            end>
+          DataSource = dsChilds
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ReadOnly = True
+          TabOrder = 2
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 288
+        Height = 373
+        Top = 1
+        Width = 303
+        Align = alClient
+        Caption = 'Упражнения'
+        ClientHeight = 356
+        ClientWidth = 301
+        TabOrder = 1
+        object DBGrid4: TDBGrid
+          Left = 0
+          Height = 160
+          Top = 0
+          Width = 301
+          Align = alTop
+          Color = clWindow
+          Columns = <          
+            item
+              Title.Caption = 'id'
+              Visible = False
+              FieldName = 'id'
+            end          
+            item
+              Title.Caption = 'less_id'
+              Visible = False
+              FieldName = 'less_id'
+            end          
+            item
+              Title.Caption = 'ex_id'
+              Visible = False
+              FieldName = 'ex_id'
+            end          
+            item
+              Title.Caption = 'Наименование'
+              FieldName = 'ex_name'
+            end          
+            item
+              Title.Caption = '№ п/п'
+              FieldName = 'seq'
+            end>
+          DataSource = dsLessExs
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object Panel6: TPanel
+          Left = 0
+          Height = 41
+          Top = 160
+          Width = 301
+          Align = alTop
+          ClientHeight = 41
+          ClientWidth = 301
+          TabOrder = 1
+          object btInEx: TBitBtn
+            Left = 72
+            Height = 40
+            Top = 0
+            Width = 40
+            AutoSize = True
+            HotImageIndex = 3
+            Images = DMmydb.imgList
+            ImageIndex = 3
+            OnClick = btInExClick
+            TabOrder = 0
+          end
+          object btOutEx: TBitBtn
+            Left = 176
+            Height = 40
+            Top = 0
+            Width = 40
+            AutoSize = True
+            HotImageIndex = 2
+            Images = DMmydb.imgList
+            ImageIndex = 2
+            OnClick = btOutExClick
+            TabOrder = 1
+          end
+        end
+        object DBGrid5: TDBGrid
+          Left = 0
+          Height = 155
+          Top = 201
+          Width = 301
+          Align = alClient
+          Color = clWindow
+          Columns = <          
+            item
+              Title.Caption = 'id'
+              Visible = False
+              FieldName = 'id'
+            end          
+            item
+              Title.Caption = 'Наименование'
+              FieldName = 'name'
+            end          
+            item
+              Title.Caption = 'Медиа'
+              Visible = False
+              FieldName = 'path'
+            end          
+            item
+              Title.Caption = 'Оборудование'
+              Visible = False
+              FieldName = 'equipment'
+            end          
+            item
+              Title.Caption = 'Коммент'
+              Visible = False
+              FieldName = 'comment'
+            end>
+          DataSource = dsExs
+          ReadOnly = True
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  object dsLessons: TDataSource
+    AutoEdit = False
+    DataSet = tbLessons
+    Left = 480
+    Top = 6
+  end
+  object dsExs: TDataSource
+    AutoEdit = False
+    DataSet = tbExs
+    Left = 88
+    Top = 6
+  end
+  object dsLessChild: TDataSource
+    AutoEdit = False
+    DataSet = vwLessChild
+    Left = 224
+    Top = 6
+  end
+  object dsChilds: TDataSource
+    AutoEdit = False
+    DataSet = tbChilds
+    Left = 352
+    Top = 6
+  end
+  object vwLessChild: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'less_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'child_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'fname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'sname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT *'
+      'FROM view_lc'
+      'WHERE (less_id=:id)'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 152
+    Top = 6
+    object vwLessChildid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Visible = False
+    end
+    object vwLessChildless_id: TLongintField
+      FieldKind = fkData
+      FieldName = 'less_id'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object vwLessChildchild_id: TLongintField
+      FieldKind = fkData
+      FieldName = 'child_id'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object vwLessChildsname: TStringField
+      DisplayLabel = 'Имя'
+      FieldKind = fkData
+      FieldName = 'sname'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+    object vwLessChildfname: TStringField
+      DisplayLabel = 'Фамилия'
+      FieldKind = fkData
+      FieldName = 'fname'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+  end
+  object tbExs: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'path'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'equipment'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'comment'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    ReadOnly = True
+    SQL.Strings = (
+      'SELECT *'
+      'FROM exercises'
+      'WHERE id NOT IN'
+      '('
+      'SELECT ex_id'
+      'FROM less_exerc'
+      'WHERE less_id = :id'
+      ')'
+      'ORDER BY name'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 48
+    Top = 6
+    object tbExsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object tbExsname: TStringField
+      DisplayLabel = 'Наименование'
+      FieldKind = fkData
+      FieldName = 'name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object tbExspath: TStringField
+      DisplayLabel = 'Медиа'
+      FieldKind = fkData
+      FieldName = 'path'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      Size = 255
+    end
+    object tbExsequipment: TMemoField
+      DisplayLabel = 'Оборудование'
+      FieldKind = fkData
+      FieldName = 'equipment'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object tbExscomment: TMemoField
+      DisplayLabel = 'Коммент'
+      FieldKind = fkData
+      FieldName = 'comment'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object tbChilds: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'fname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'sname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT id, fname, sname'
+      'FROM childs'
+      'WHERE id NOT IN'
+      '('
+      'SELECT child_id'
+      'FROM less_child'
+      'WHERE less_id = :id'
+      ')'
+      'ORDER BY sname'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 296
+    Top = 6
+    object tbChildsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object tbChildsfname: TStringField
+      FieldKind = fkData
+      FieldName = 'fname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+    object tbChildssname: TStringField
+      FieldKind = fkData
+      FieldName = 'sname'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+  end
+  object tbLessons: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'l_date'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'l_hour'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'comment'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT *'
+      'FROM lessons'
+      'ORDER BY l_date, l_hour'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 416
+    Top = 6
+    object tbLessonsid: TAutoIncField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+    end
+    object tbLessonsl_date: TStringField
+      FieldKind = fkData
+      FieldName = 'l_date'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object tbLessonsl_hour: TLongintField
+      FieldKind = fkData
+      FieldName = 'l_hour'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object tbLessonscomment: TMemoField
+      FieldKind = fkData
+      FieldName = 'comment'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object qr: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    Options = [sqoKeepOpenOnCommit]
+    Params = <>
+    Macros = <>
+    Left = 608
+    Top = 6
+  end
+  object vwLessExs: TSQLQuery
+    PacketRecords = -1
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'less_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ex_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'seq'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ex_name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    ReadOnly = True
+    SQL.Strings = (
+      'SELECT *'
+      'FROM view_le'
+      'WHERE less_id = :id'
+      'ORDER BY seq'
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit]
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 552
+    Top = 6
+    object vwLessExsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object vwLessExsless_id: TLongintField
+      FieldKind = fkData
+      FieldName = 'less_id'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object vwLessExsex_id: TLongintField
+      FieldKind = fkData
+      FieldName = 'ex_id'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object vwLessExsex_name: TStringField
+      DisplayLabel = 'Наименование'
+      FieldKind = fkData
+      FieldName = 'ex_name'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object vwLessExsseq: TLongintField
+      DisplayLabel = '№ п/п'
+      FieldKind = fkData
+      FieldName = 'seq'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsLessExs: TDataSource
+    DataSet = vwLessExs
+    Left = 552
+    Top = 64
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    Formatted = False
+    Left = 625
+    Top = 78
+  end
+end

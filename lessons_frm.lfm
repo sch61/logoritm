@@ -1,0 +1,252 @@
+object frmLessons: TfrmLessons
+  Left = 314
+  Height = 416
+  Top = 212
+  Width = 473
+  Caption = 'Занятия'
+  ClientHeight = 416
+  ClientWidth = 473
+  OnClose = FormClose
+  OnCreate = FormCreate
+  SessionProperties = 'Left;Position;Top;Width;Height;DBGrid1.Columns'
+  LCLVersion = '3.0.0.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 473
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 473
+    TabOrder = 0
+    object DBNavigator1: TDBNavigator
+      Left = 17
+      Height = 25
+      Top = 12
+      Width = 241
+      BeforeAction = DBNavigator1BeforeAction
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 241
+      DataSource = dsLessons
+      Options = []
+      TabOrder = 0
+    end
+    object BitBtn1: TBitBtn
+      Left = 365
+      Height = 48
+      Top = 1
+      Width = 107
+      Align = alRight
+      AutoSize = True
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 120
+    Top = 296
+    Width = 473
+    ActivePage = TabSheet1
+    Align = alBottom
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Запись'
+      ClientHeight = 82
+      ClientWidth = 465
+      object Label1: TLabel
+        Left = 8
+        Height = 16
+        Top = 2
+        Width = 30
+        Caption = 'Дата'
+      end
+      object DBEdit1: TDBEdit
+        Left = 9
+        Height = 40
+        Top = 27
+        Width = 135
+        DataField = 'l_date'
+        DataSource = dsLessons
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 161
+        Height = 16
+        Top = 9
+        Width = 69
+        Caption = 'Время(час)'
+      end
+      object DBEdit2: TDBEdit
+        Left = 161
+        Height = 40
+        Top = 27
+        Width = 80
+        DataField = 'l_hour'
+        DataSource = dsLessons
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object DBMemo1: TDBMemo
+        Left = 252
+        Height = 82
+        Top = 0
+        Width = 213
+        Align = alRight
+        DataField = 'comment'
+        DataSource = dsLessons
+        TabOrder = 2
+      end
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 246
+    Top = 50
+    Width = 473
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Visible = False
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Дата'
+        FieldName = 'l_date'
+      end    
+      item
+        Title.Caption = 'Время(час)'
+        FieldName = 'l_hour'
+      end    
+      item
+        Title.Caption = 'Коммент'
+        FieldName = 'comment'
+      end>
+    DataSource = dsLessons
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisableDelete, dgDisableInsert]
+    TabOrder = 2
+  end
+  object dsLessons: TDataSource
+    AutoEdit = False
+    DataSet = tbLessons
+    Left = 300
+    Top = 64
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    JSONFileName = 'logoritm.json'
+    Formatted = True
+    Left = 331
+    Top = 8
+  end
+  object tbLessons: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'l_date'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'l_hour'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'comment'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT'
+      '  id, '
+      '  l_date, '
+      '  l_hour, '
+      '  comment'
+      'FROM lessons'
+      'ORDER BY l_date, l_hour'
+    )
+    InsertSQL.Strings = (
+      ''
+    )
+    UpdateSQL.Strings = (
+      ''
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    RefreshSQL.Strings = (
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    Macros = <>
+    Left = 216
+    Top = 72
+    object tbLessonsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object tbLessonsl_date: TStringField
+      DisplayLabel = 'Дата'
+      FieldKind = fkData
+      FieldName = 'l_date'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object tbLessonsl_hour: TLongintField
+      DisplayLabel = 'Час'
+      FieldKind = fkData
+      FieldName = 'l_hour'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object tbLessonscomment: TMemoField
+      DisplayLabel = 'Коммент'
+      FieldKind = fkData
+      FieldName = 'comment'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+end

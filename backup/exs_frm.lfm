@@ -1,0 +1,378 @@
+object frmExs: TfrmExs
+  Left = 382
+  Height = 513
+  Top = 160
+  Width = 761
+  Caption = 'Упражнения'
+  ClientHeight = 513
+  ClientWidth = 761
+  OnClose = FormClose
+  OnCreate = FormCreate
+  SessionProperties = 'DBGrid1.Columns;Height;Left;Position;Top;Width'
+  LCLVersion = '3.0.0.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 761
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 761
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 653
+      Height = 48
+      Top = 1
+      Width = 107
+      Align = alRight
+      AutoSize = True
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 12
+      Height = 25
+      Top = 11
+      Width = 241
+      BeforeAction = DBNavigator1BeforeAction
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 241
+      DataSource = dsExs
+      Options = []
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 209
+    Top = 304
+    Width = 761
+    ActivePage = TabSheet1
+    Align = alBottom
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Запись'
+      ClientHeight = 171
+      ClientWidth = 753
+      object Panel2: TPanel
+        Left = 0
+        Height = 171
+        Top = 0
+        Width = 346
+        Align = alLeft
+        ClientHeight = 171
+        ClientWidth = 346
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 7
+          Height = 16
+          Top = 23
+          Width = 94
+          Caption = 'Наименование'
+        end
+        object DBEdit1: TDBEdit
+          Left = 7
+          Height = 41
+          Top = 47
+          Width = 329
+          DataField = 'name'
+          DataSource = dsExs
+          AutoSize = False
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object Label2: TLabel
+          Left = 9
+          Height = 16
+          Top = 95
+          Width = 34
+          Caption = 'Файл'
+        end
+        object DBEdit2: TDBEdit
+          Left = 9
+          Height = 40
+          Top = 121
+          Width = 303
+          DataField = 'path'
+          DataSource = dsExs
+          AutoSize = False
+          MaxLength = 0
+          TabOrder = 1
+        end
+        object BitBtn2: TBitBtn
+          Left = 312
+          Height = 40
+          Top = 121
+          Width = 40
+          AutoSize = True
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0002ABD5FD00AA
+            D4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AA
+            D4FF00AAD4FF00AAD4FF00AAD4FF01AAD5F400AAD50CFFFFFF0005ACD6FF3FC4
+            EAFF55CFF4FF51CEF4FF4CCDF4FF48CCF4FF43CBF4FF3FCAF4FF3AC9F4FF36C8
+            F4FF31C7F4FF31C7F4FF31C7F4FF0BB0DAF100A9D44DFFFFFF0001ABD4FF31BD
+            E2FF6CD4F4FF67D3F4FF63D2F4FF5ED1F4FF5AD0F4FF55CFF4FF51CEF4FF4CCD
+            F4FF48CCF4FF43CBF4FF3FCAF4FF20BBE6FE03ACD79FFFFFFF0000AAD4FF13B1
+            D8FF82D9F4FF7ED8F4FF79D7F4FF75D6F4FF70D5F4FF6CD4F4FF67D3F4FF63D2
+            F4FF5ED1F4FF5AD0F4FF55CFF4FF44C8EFFF03ACD5ECFFFFFF0000AAD4FF17B3
+            D8FF80D5EFFF94DDF4FF90DCF4FF8BDBF4FF87DAF4FF82D9F4FF7ED8F4FF79D7
+            F4FF75D6F4FF70D5F4FF6CD4F4FF67D3F4FF08ADD6F400A8D32900AAD4FF52C8
+            E6FF5CC8E6FFA6E1F4FFA6E1F4FFA1E0F4FF9DDFF4FF98DEF4FF94DDF4FF90DC
+            F4FF8BDBF4FF86DAF4FF82D9F4FF7DD8F4FF2FBCE1F702ABD57300AAD4FF8EDD
+            F2FF2EBADDFFA6E1F4FFA6E1F4FFA6E1F4FFA6E1F4FFA6E1F4FFA6E1F4FFA6E1
+            F4FFA2E0F4FF9DDFF4FF98DEF4FF94DDF4FF64CDEAFF0AAED6C900AAD4FFC2F0
+            FDFF0CAED7FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AA
+            D4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF00AAD4FF03ABD4ED00AAD4FFCCF3
+            FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3
+            FFFFCCF3FFFFCCF3FFFFCCF3FFFF00AAD4FFFFFFFF00FFFFFF0000AAD4FFCCF3
+            FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3FFFFCCF3
+            FFFFCCF3FFFFCCF3FFFFCCF3FFFF00AAD4FFFFFFFF00FFFFFF0003ABD4FBBEEE
+            FCFFCCF3FFFFCCF3FFFFBEEEFCFF09ADD6FA00AAD4FF00AAD4FF00AAD4FF00AA
+            D4FF00AAD4FF00AAD4FF00AAD4FF03ABD5F3FFFFFF00FFFFFF000BAED78702AB
+            D4FB00AAD4FF00AAD4FF02ABD4FB0BAED787FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          HotImageIndex = 0
+          Images = DMmydb.imgList
+          ImageIndex = 0
+          OnClick = BitBtn2Click
+          TabOrder = 2
+        end
+        object BitBtn3: TBitBtn
+          Left = 176
+          Height = 42
+          Top = 1
+          Width = 160
+          Caption = 'Воспроизвести'
+          HotImageIndex = 1
+          Images = DMmydb.imgList
+          ImageIndex = 1
+          OnClick = BitBtn3Click
+          TabOrder = 3
+        end
+      end
+      object Panel3: TPanel
+        Left = 346
+        Height = 171
+        Top = 0
+        Width = 407
+        Align = alClient
+        ClientHeight = 171
+        ClientWidth = 407
+        TabOrder = 1
+        object Panel4: TPanel
+          Left = 1
+          Height = 23
+          Top = 1
+          Width = 405
+          Align = alTop
+          ClientHeight = 23
+          ClientWidth = 405
+          TabOrder = 0
+          object Label3: TLabel
+            Left = 8
+            Height = 16
+            Top = 3
+            Width = 93
+            Caption = 'Оборудование'
+          end
+          object Label4: TLabel
+            Left = 168
+            Height = 16
+            Top = 0
+            Width = 57
+            Caption = 'Коммент'
+          end
+        end
+        object DBMemo1: TDBMemo
+          Left = 1
+          Height = 146
+          Top = 24
+          Width = 150
+          Align = alLeft
+          DataField = 'equipment'
+          DataSource = dsExs
+          TabOrder = 1
+        end
+        object DBMemo2: TDBMemo
+          Left = 151
+          Height = 146
+          Top = 24
+          Width = 255
+          Align = alClient
+          DataField = 'comment'
+          DataSource = dsExs
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 254
+    Top = 50
+    Width = 761
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Visible = False
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Наименование'
+        FieldName = 'name'
+      end    
+      item
+        Title.Caption = 'Путь к медиа'
+        FieldName = 'path'
+      end    
+      item
+        Title.Caption = 'Оборудование'
+        FieldName = 'equipment'
+      end    
+      item
+        Title.Caption = 'Коммент'
+        FieldName = 'comment'
+      end>
+    DataSource = dsExs
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object dsExs: TDataSource
+    AutoEdit = False
+    DataSet = tbExs
+    Left = 365
+    Top = 16
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 248
+    Top = 408
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    JSONFileName = 'logoritm.json'
+    Formatted = True
+    Left = 579
+    Top = 19
+  end
+  object tbExs: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'path'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'equipment'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'comment'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT *'
+      'FROM exercises'
+      'ORDER BY name'
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    Macros = <>
+    Left = 312
+    Top = 16
+    object tbExsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = True
+      Required = False
+    end
+    object tbExsname: TStringField
+      DisplayLabel = 'Наименование'
+      FieldKind = fkData
+      FieldName = 'name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object tbExspath: TStringField
+      DisplayLabel = 'Медиа'
+      FieldKind = fkData
+      FieldName = 'path'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object tbExsequipment: TMemoField
+      DisplayLabel = 'Оборудование'
+      FieldKind = fkData
+      FieldName = 'equipment'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object tbExscomment: TMemoField
+      DisplayLabel = 'Коммент'
+      FieldKind = fkData
+      FieldName = 'comment'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+end

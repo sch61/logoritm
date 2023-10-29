@@ -1,0 +1,103 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tfrmlessons.caption
+msgctxt "tfrmlessons.caption"
+msgid "Занятия"
+msgstr ""
+
+#: tfrmlessons.dbgrid1.columns[0].title.caption
+msgid "id"
+msgstr ""
+
+#: tfrmlessons.dbgrid1.columns[1].title.caption
+msgctxt "tfrmlessons.dbgrid1.columns[1].title.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmlessons.dbgrid1.columns[2].title.caption
+msgctxt "tfrmlessons.dbgrid1.columns[2].title.caption"
+msgid "Время(час)"
+msgstr ""
+
+#: tfrmlessons.dbgrid1.columns[3].title.caption
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlessons.label1.caption
+msgctxt "tfrmlessons.label1.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmlessons.label2.caption
+msgctxt "tfrmlessons.label2.caption"
+msgid "Время(час)"
+msgstr ""
+
+#: tfrmlessons.tabsheet1.caption
+msgid "Запись"
+msgstr ""
+
+#: tmainform.caption
+msgid "Логоритмика"
+msgstr ""
+
+#: tmainform.menuitem1.caption
+msgid "Файлы"
+msgstr ""
+
+#: tmainform.menuitem10.caption
+msgid "Настройки"
+msgstr ""
+
+#: tmainform.menuitem11.caption
+msgid "Формирование"
+msgstr ""
+
+#: tmainform.menuitem12.caption
+msgid "Проведение"
+msgstr ""
+
+#: tmainform.menuitem2.caption
+msgid "Справочники"
+msgstr ""
+
+#: tmainform.menuitem3.caption
+msgid "Языки"
+msgstr ""
+
+#: tmainform.menuitem4.caption
+msgid "Дети"
+msgstr ""
+
+#: tmainform.menuitem5.caption
+msgid "Упражнения"
+msgstr ""
+
+#: tmainform.menuitem6.caption
+msgctxt "tmainform.menuitem6.caption"
+msgid "Занятия"
+msgstr ""
+
+#: tmainform.menuitem7.caption
+msgctxt "tmainform.menuitem7.caption"
+msgid "Занятия"
+msgstr ""
+
+#: tmainform.menuitem8.caption
+msgid "Выход"
+msgstr ""
+
+#: tmainform.menuitem9.caption
+msgid "Сервис"
+msgstr ""
+
+#: tmainform.statbar.panels[0].text
+msgctxt "tmainform.statbar.panels[0].text"
+msgid "Версия 1.1.0.111"
+msgstr ""
+
+#: tmainform.toolbar1.caption
+msgid "ToolBar1"
+msgstr ""
+

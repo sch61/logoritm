@@ -1,0 +1,165 @@
+object frmLangs: TfrmLangs
+  Left = 314
+  Height = 240
+  Top = 169
+  Width = 371
+  Caption = 'Языки'
+  ClientHeight = 240
+  ClientWidth = 371
+  OnClose = FormClose
+  OnCreate = FormCreate
+  SessionProperties = 'Height;Left;Position;Top;Width;DBGrid1.Columns'
+  LCLVersion = '3.0.0.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 371
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 371
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 263
+      Height = 48
+      Top = 1
+      Width = 107
+      Align = alRight
+      AutoSize = True
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 11
+      Height = 25
+      Top = 13
+      Width = 241
+      BeforeAction = DBNavigator1BeforeAction
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 241
+      DataSource = dsLangs
+      Options = []
+      TabOrder = 1
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 190
+    Top = 50
+    Width = 371
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Visible = False
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Язык'
+        FieldName = 'lname'
+      end>
+    DataSource = dsLangs
+    TabOrder = 1
+  end
+  object dsLangs: TDataSource
+    DataSet = tbLangs
+    Left = 184
+    Top = 92
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    JSONFileName = 'logoritm.json'
+    Formatted = True
+    Left = 273
+    Top = 67
+  end
+  object tbLangs: TSQLQuery
+    PacketRecords = -1
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'lname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    SQL.Strings = (
+      'SELECT'
+      '  "id", "lname"'
+      'FROM "sp_lang"'
+      'ORDER BY "lname"'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO "sp_lang"'
+      '  ("id", "lname"'
+      '  )'
+      'VALUES'
+      '  (:id, :lname'
+      '  )'
+    )
+    UpdateSQL.Strings = (
+      'UPDATE "sp_lang"'
+      'SET'
+      '  "id" = :id, "lname" = :lname'
+      'WHERE'
+      '   ("id" = :OLD_id)'
+      '  '
+    )
+    DeleteSQL.Strings = (
+      'DELETE FROM "sp_lang"'
+      'WHERE'
+      '   ("id" = :OLD_id)'
+      '  '
+    )
+    RefreshSQL.Strings = (
+      'SELECT'
+      '  "id", "lname"'
+      'FROM "sp_lang"'
+      'WHERE'
+      '   ("lname" = :lname)'
+      '  '
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    Macros = <>
+    Left = 139
+    Top = 92
+    object tbLangsid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object tbLangslname: TStringField
+      DisplayLabel = 'Язык'
+      FieldKind = fkData
+      FieldName = 'lname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfRefreshOnInsert]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+  end
+end
