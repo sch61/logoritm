@@ -33,7 +33,9 @@ type
     ToolBar1: TToolBar;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem12Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
@@ -53,7 +55,8 @@ implementation
 {$R *.lfm}
 
 uses
-  childs_frm, lessons_frm, langs_frm, exs_frm, db_unit, lesscreator_frm;
+  childs_frm, lessons_frm, langs_frm, exs_frm, db_unit, lesscreator_frm,
+  lessexec_frm, options_frm;
 
   { TMainForm }
 
@@ -108,13 +111,23 @@ begin
     DMMyDB.jsonStor.WriteString('dbFileName', s);
   end;
   inf := TVersionInfo.Create;
+  inf.Load(HINSTANCE);
   statBar.Panels[0].Text := 'Версия ' +
-                         IntToStr(inf.FixedInfo.FileVersion[0])+
-                         '.'+IntToStr(inf.FixedInfo.FileVersion[1])+
-                         '.'+IntToStr(inf.FixedInfo.FileVersion[2])+
-                         '.'+IntToStr(inf.FixedInfo.FileVersion[3]);
+    IntToStr(inf.FixedInfo.FileVersion[0]) +
+    '.' + IntToStr(inf.FixedInfo.FileVersion[1]) +
+    '.' + IntToStr(inf.FixedInfo.FileVersion[2]) +
+    '.' + IntToStr(inf.FixedInfo.FileVersion[3]);
   inf.Free;
   //  Showmessage(s);
+end;
+
+procedure TMainForm.MenuItem10Click(Sender: TObject);
+begin
+  if not Assigned(frmOptions) then
+  begin
+    Application.CreateForm(TfrmOptions, frmOptions);
+  end;
+  frmOptions.Show;
 end;
 
 procedure TMainForm.MenuItem11Click(Sender: TObject);
@@ -124,6 +137,15 @@ begin
     Application.CreateForm(TfrmLessCreator, frmLessCreator);
   end;
   frmLessCreator.Show;
+end;
+
+procedure TMainForm.MenuItem12Click(Sender: TObject);
+begin
+  if not Assigned(frmLessExecute) then
+  begin
+    Application.CreateForm(TfrmLessExecute, frmLessExecute);
+  end;
+  frmLessExecute.Show;
 end;
 
 procedure TMainForm.MenuItem3Click(Sender: TObject);

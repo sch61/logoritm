@@ -9,8 +9,10 @@
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
-        <DpiAware Value="Per-monitor"/>
+        <DpiAware Value="True/PM_V2"/>
+        <ExecutionLevel Value="highestAvailable"/>
         <LongPathAware Value="True"/>
+        <TextName Value="sch61.Logoritmica.Logoritm"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
@@ -22,7 +24,7 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="10"/>
-      <BuildNr Value="9"/>
+      <BuildNr Value="11"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable CompanyName="sch61"/>
@@ -141,6 +143,20 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="lessexec_frm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLessExecute"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="options_frm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -165,6 +181,7 @@
         <StackChecks Value="True"/>
       </Checks>
       <VerifyObjMethodCallValidity Value="True"/>
+      <TargetCPU Value="x86_64"/>
     </CodeGeneration>
     <Linking>
       <Debugging>

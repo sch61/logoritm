@@ -6,10 +6,10 @@ object frmLangs: TfrmLangs
   Caption = 'Языки'
   ClientHeight = 240
   ClientWidth = 371
+  SessionProperties = 'Height;Left;Position;Top;Width;DBGrid1.Columns'
+  LCLVersion = '3.99.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  SessionProperties = 'Height;Left;Position;Top;Width;DBGrid1.Columns'
-  LCLVersion = '3.0.0.1'
   object Panel1: TPanel
     Left = 0
     Height = 50

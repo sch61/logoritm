@@ -4,7 +4,7 @@ object DMmydb: TDMmydb
   OldCreateOrder = False
   Height = 298
   HorizontalOffset = 296
-  VerticalOffset = 169
+  VerticalOffset = 212
   Width = 376
   object dbConn: TSQLite3Connection
     Connected = False

@@ -1,18 +1,16 @@
 object MainForm: TMainForm
-  Left = 343
-  Height = 57
-  Top = 203
+  Left = 371
+  Height = 6
+  Top = 159
   Width = 810
-  Align = alTop
-  AutoSize = True
   Caption = 'Логоритмика'
-  ClientHeight = 57
+  ClientHeight = 6
   ClientWidth = 810
   Menu = MainMenu1
+  SessionProperties = 'Caption;Left;Position;Top;Width;Height'
+  LCLVersion = '3.99.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  SessionProperties = 'Caption;Left;Position;Top;Width;Height'
-  LCLVersion = '3.0.0.1'
   object ToolBar1: TToolBar
     Left = 0
     Height = 26
@@ -30,7 +28,7 @@ object MainForm: TMainForm
   object statBar: TStatusBar
     Left = 0
     Height = 18
-    Top = 39
+    Top = -12
     Width = 810
     Panels = <    
       item
@@ -81,19 +79,21 @@ object MainForm: TMainForm
       end
       object MenuItem12: TMenuItem
         Caption = 'Проведение'
+        OnClick = MenuItem12Click
       end
     end
     object MenuItem9: TMenuItem
       Caption = 'Сервис'
       object MenuItem10: TMenuItem
         Caption = 'Настройки'
+        OnClick = MenuItem10Click
       end
     end
   end
   object JSONPropStorage1: TJSONPropStorage
     StoredValues = <>
     Formatted = False
-    Left = 590
-    Top = 23
+    Left = 592
+    Top = 8
   end
 end

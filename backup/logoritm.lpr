@@ -20,7 +20,7 @@ uses
   lessons_frm,
   langs_frm,
   exs_frm,
-  lesscreator_frm;
+  lesscreator_frm, lessexec_frm;
 
   {$R *.res}
 
@@ -30,6 +30,7 @@ begin
   Application.Initialize;
   Application.CreateForm(TDMmydb, dmMydb);
   Application.CreateForm(TMainForm, MainForm);
+//  Application.CreateForm(TfrmLessExecute, frmLessExecute);
   //  Application.CreateForm(TfrmLessCreator, frmLessCreator);
   //  Application.CreateForm(TfrmExs, frmExs);
   //  Application.CreateForm(TfrmLangs, frmLangs);

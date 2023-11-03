@@ -17,6 +17,12 @@ type
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
+    DBGrid3: TDBGrid;
+    DBMemo4: TDBMemo;
+    dsChilds: TDataSource;
+    DBGrid2: TDBGrid;
+    DBMemo3: TDBMemo;
+    dsLess: TDataSource;
     DBEdit1: TDBEdit;
     DBEdit2: TDBEdit;
     DBMemo1: TDBMemo;
@@ -29,6 +35,18 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    qrChildsccomment: TMemoField;
+    qrChildsex_cnt: TLongintField;
+    qrChildsfname: TStringField;
+    qrChildsml_date: TStringField;
+    qrChildssname: TStringField;
+    qrLess: TSQLQuery;
+    qrLesslcomment: TMemoField;
+    qrLessl_date: TStringField;
+    qrLessl_hour: TLongintField;
+    qrChilds: TSQLQuery;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
     tbExscomment: TMemoField;
     tbExsequipment: TMemoField;
     tbExsid: TLongintField;
@@ -68,12 +86,17 @@ uses
 procedure TfrmExs.FormCreate(Sender: TObject);
 begin
   tbExs.Active := True;
+  qrLess.Active:=True;
+  qrChilds.Active:=True;
 end;
 
 
 procedure TfrmExs.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   tbExs.Active := False;
+  qrLess.Active:=False;
+  qrChilds.Active:=False;
+
   CloseAction := caFree;
   frmExs := nil;
 end;

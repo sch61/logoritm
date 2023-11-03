@@ -44,7 +44,7 @@ end;
 
 procedure TDMmydb.DataModuleDestroy(Sender: TObject);
 begin
-  dbConn.Connected:=False;
+  dbConn.Connected := False;
 end;
 
 procedure TDMmydb.jsonStorRestoreProperties(Sender: TObject);
@@ -54,8 +54,8 @@ begin
   s := jsonStor.StoredValue['dbFileName'];
   if s.Length > 0 then
     dbFileName := s;
-  dbConn.DatabaseName:=dbFileName;
-  dbConn.Connected:=True;
+  dbConn.DatabaseName := dbFileName;
+  dbConn.Connected := True;
 end;
 
 end.

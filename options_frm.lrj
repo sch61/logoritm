@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":143894408,"name":"tfrmoptions.caption","sourcebytes":[208,157,208,176,209,129,209,130,209,128,208,190,208,185,208,186,208,184],"value":"\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"},
+{"hash":190819556,"name":"tfrmoptions.label1.caption","sourcebytes":[208,159,209,131,209,130,209,140,32,208,186,32,208,145,208,148],"value":"\u041F\u0443\u0442\u044C \u043A \u0411\u0414"},
+{"hash":157854258,"name":"tfrmoptions.edpathdb.text","sourcebytes":[101,100,80,97,116,104,68,66],"value":"edPathDB"}
+]}

@@ -6,21 +6,34 @@ interface
 
 uses
   Classes, SysUtils, SQLite3DS, DB, SQLDB, Forms, Controls, Graphics, Dialogs,
-  ExtCtrls, Buttons, DBCtrls, DBGrids, StdCtrls, PairSplitter, JSONPropStorage;
+  ExtCtrls, Buttons, DBCtrls, DBGrids, StdCtrls, PairSplitter, JSONPropStorage
+  , DateUtils;
 
 type
 
   { TfrmLessCreator }
 
   TfrmLessCreator = class(TForm)
+    btInCh: TBitBtn;
     btInEx: TBitBtn;
+    btOutCh: TBitBtn;
     btOutEx: TBitBtn;
-    dsLessExs: TDataSource;
+    DBGrid2: TDBGrid;
+    DBGrid3: TDBGrid;
     DBGrid4: TDBGrid;
     DBGrid5: TDBGrid;
+    dsLessExs: TDataSource;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
     JSONPropStorage1: TJSONPropStorage;
+    Panel5: TPanel;
     Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
     qr: TSQLQuery;
+    Splitter1: TSplitter;
+    vwLessChildage: TFloatField;
+    vwLessChildbd: TDateField;
     vwLessExs: TSQLQuery;
     tbChildsid: TLongintField;
     tbExscomment: TMemoField;
@@ -32,11 +45,7 @@ type
     tbChildsfname: TStringField;
     tbChildssname: TStringField;
     BitBtn1: TBitBtn;
-    btInCh: TBitBtn;
-    btOutCh: TBitBtn;
     dsChilds: TDataSource;
-    DBGrid2: TDBGrid;
-    DBGrid3: TDBGrid;
     dsLessChild: TDataSource;
     dsExs: TDataSource;
     DBEdit1: TDBEdit;
@@ -46,15 +55,12 @@ type
     dsLessons: TDataSource;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
-    GroupBox1: TGroupBox;
-    GroupBox2: TGroupBox;
     Label1: TLabel;
     Label2: TLabel;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
-    Panel5: TPanel;
     tbChilds: TSQLQuery;
     tbExs: TSQLQuery;
     vwLessChild: TSQLQuery;
@@ -78,6 +84,7 @@ type
     procedure btOutExClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure vwLessChildCalcFields(DataSet: TDataSet);
   private
 
   public
@@ -110,12 +117,12 @@ end;
 
 procedure TfrmLessCreator.btInChClick(Sender: TObject);
 var
-  s: String;
+  s: string;
 begin
-  s :='INSERT INTO less_child (less_id, child_id) VALUES (:less_id, :child_id)';
+  s := 'INSERT INTO less_child (less_id, child_id) VALUES (:less_id, :child_id)';
   qr.SQL.Text := s;
-  qr.ParamByName('less_id').AsInteger:=tbLessonsid.Value;
-  qr.ParamByName('child_id').AsInteger:=tbChildsid.Value;
+  qr.ParamByName('less_id').AsInteger := tbLessonsid.Value;
+  qr.ParamByName('child_id').AsInteger := tbChildsid.Value;
   qr.ExecSQL;
   vwLessChild.Refresh;
   tbChilds.Refresh;
@@ -123,13 +130,13 @@ end;
 
 procedure TfrmLessCreator.btInExClick(Sender: TObject);
 var
-  s: String;
+  s: string;
 begin
-  s :='INSERT INTO less_exerc (less_id, ex_id, seq) VALUES (:less_id, :ex_id, :seq)';
+  s := 'INSERT INTO less_exerc (less_id, ex_id, seq) VALUES (:less_id, :ex_id, :seq)';
   qr.SQL.Text := s;
-  qr.ParamByName('less_id').AsInteger:=tbLessonsid.Value;
-  qr.ParamByName('ex_id').AsInteger:=tbExsid.Value;
-//  qr.ParamByName('seq').AsInteger:=0;
+  qr.ParamByName('less_id').AsInteger := tbLessonsid.Value;
+  qr.ParamByName('ex_id').AsInteger := tbExsid.Value;
+  //  qr.ParamByName('seq').AsInteger:=0;
   qr.ExecSQL;
   vwLessExs.Refresh;
   tbExs.Refresh;
@@ -137,11 +144,11 @@ end;
 
 procedure TfrmLessCreator.btOutChClick(Sender: TObject);
 var
-  s: String;
+  s: string;
 begin
-  s :='DELETE FROM less_child WHERE id = :id';
+  s := 'DELETE FROM less_child WHERE id = :id';
   qr.SQL.Text := s;
-  qr.ParamByName('id').AsInteger:=vwLessChildid.Value;
+  qr.ParamByName('id').AsInteger := vwLessChildid.Value;
   qr.ExecSQL;
   vwLessChild.Refresh;
   tbChilds.Refresh;
@@ -149,11 +156,11 @@ end;
 
 procedure TfrmLessCreator.btOutExClick(Sender: TObject);
 var
-  s: String;
+  s: string;
 begin
-  s :='DELETE FROM less_exerc WHERE id = :id';
+  s := 'DELETE FROM less_exerc WHERE id = :id';
   qr.SQL.Text := s;
-  qr.ParamByName('id').AsInteger:=vwLessExsid.Value;
+  qr.ParamByName('id').AsInteger := vwLessExsid.Value;
   qr.ExecSQL;
   vwLessExs.Refresh;
   tbExs.Refresh;
@@ -166,6 +173,11 @@ begin
   tbExs.Active := True;
   vwLessChild.Active := True;
   vwLessExs.Active := True;
+end;
+
+procedure TfrmLessCreator.vwLessChildCalcFields(DataSet: TDataSet);
+begin
+  vwLessChildage.Value := YearSpan(Now, vwLessChildbd.Value);
 end;
 
 

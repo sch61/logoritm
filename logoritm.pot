@@ -1,12 +1,578 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: tfrmchilds.caption
+msgctxt "tfrmchilds.caption"
+msgid "Дети"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[0].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[10].title.caption
+msgid "Тел №"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[1].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[1].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[2].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[2].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[3].title.caption
+msgid "ДР"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[4].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[4].title.caption"
+msgid "Лет"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[5].title.caption
+msgid "lang"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[6].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[6].title.caption"
+msgid "Язык"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[7].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[7].title.caption"
+msgid "Имя род"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[8].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[8].title.caption"
+msgid "Фам род"
+msgstr ""
+
+#: tfrmchilds.dbgrid1.columns[9].title.caption
+msgctxt "tfrmchilds.dbgrid1.columns[9].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmchilds.dbgrid2.columns[0].title.caption
+msgctxt "tfrmchilds.dbgrid2.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmchilds.dbgrid2.columns[1].title.caption
+msgctxt "tfrmchilds.dbgrid2.columns[1].title.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmchilds.dbgrid2.columns[2].title.caption
+msgctxt "tfrmchilds.dbgrid2.columns[2].title.caption"
+msgid "Час"
+msgstr ""
+
+#: tfrmchilds.dbgrid2.columns[3].title.caption
+msgctxt "tfrmchilds.dbgrid2.columns[3].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[0].title.caption
+msgctxt "tfrmchilds.dbgrid3.columns[0].title.caption"
+msgid "child_id"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[1].title.caption
+msgctxt "tfrmchilds.dbgrid3.columns[1].title.caption"
+msgid "ex_id"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[2].title.caption
+msgid "fname"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[3].title.caption
+msgid "sname"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[4].title.caption
+msgid "ccomment"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[5].title.caption
+msgid "Упражнение"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[6].title.caption
+msgctxt "tfrmchilds.dbgrid3.columns[6].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[7].title.caption
+msgctxt "tfrmchilds.dbgrid3.columns[7].title.caption"
+msgid "Крайняя дата"
+msgstr ""
+
+#: tfrmchilds.dbgrid3.columns[8].title.caption
+msgctxt "tfrmchilds.dbgrid3.columns[8].title.caption"
+msgid "Кол-во"
+msgstr ""
+
+#: tfrmchilds.dbgroupbox1.caption
+msgid "Ребенок"
+msgstr ""
+
+#: tfrmchilds.dbgroupbox2.caption
+msgid "Родитель"
+msgstr ""
+
+#: tfrmchilds.label1.caption
+msgid "День рожд"
+msgstr ""
+
+#: tfrmchilds.label2.caption
+msgctxt "tfrmchilds.label2.caption"
+msgid "Язык"
+msgstr ""
+
+#: tfrmchilds.label3.caption
+msgid "Телефон"
+msgstr ""
+
+#: tfrmchilds.label4.caption
+msgctxt "tfrmchilds.label4.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmchilds.label5.caption
+msgctxt "tfrmchilds.label5.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmchilds.label6.caption
+msgctxt "tfrmchilds.label6.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmchilds.label7.caption
+msgctxt "tfrmchilds.label7.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmchilds.tabsheet1.caption
+msgctxt "tfrmchilds.tabsheet1.caption"
+msgid "Запись"
+msgstr ""
+
+#: tfrmchilds.tabsheet2.caption
+msgctxt "tfrmchilds.tabsheet2.caption"
+msgid "Занятия"
+msgstr ""
+
+#: tfrmchilds.tabsheet3.caption
+msgctxt "tfrmchilds.tabsheet3.caption"
+msgid "Упражнения"
+msgstr ""
+
+#: tfrmexs.bitbtn3.caption
+msgctxt "tfrmexs.bitbtn3.caption"
+msgid "Воспроизвести"
+msgstr ""
+
+#: tfrmexs.caption
+msgctxt "tfrmexs.caption"
+msgid "Упражнения"
+msgstr ""
+
+#: tfrmexs.dbgrid1.columns[0].title.caption
+msgctxt "tfrmexs.dbgrid1.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmexs.dbgrid1.columns[1].title.caption
+msgctxt "tfrmexs.dbgrid1.columns[1].title.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmexs.dbgrid1.columns[2].title.caption
+msgid "Путь к медиа"
+msgstr ""
+
+#: tfrmexs.dbgrid1.columns[3].title.caption
+msgctxt "tfrmexs.dbgrid1.columns[3].title.caption"
+msgid "Оборудование"
+msgstr ""
+
+#: tfrmexs.dbgrid1.columns[4].title.caption
+msgctxt "tfrmexs.dbgrid1.columns[4].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmexs.dbgrid2.columns[0].title.caption
+msgctxt "tfrmexs.dbgrid2.columns[0].title.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmexs.dbgrid2.columns[1].title.caption
+msgctxt "tfrmexs.dbgrid2.columns[1].title.caption"
+msgid "Час"
+msgstr ""
+
+#: tfrmexs.dbgrid2.columns[2].title.caption
+msgctxt "tfrmexs.dbgrid2.columns[2].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmexs.dbgrid3.columns[0].title.caption
+msgctxt "tfrmexs.dbgrid3.columns[0].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmexs.dbgrid3.columns[1].title.caption
+msgctxt "tfrmexs.dbgrid3.columns[1].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmexs.dbgrid3.columns[2].title.caption
+msgctxt "tfrmexs.dbgrid3.columns[2].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmexs.dbgrid3.columns[3].title.caption
+msgctxt "tfrmexs.dbgrid3.columns[3].title.caption"
+msgid "Крайняя дата"
+msgstr ""
+
+#: tfrmexs.dbgrid3.columns[4].title.caption
+msgctxt "tfrmexs.dbgrid3.columns[4].title.caption"
+msgid "Кол-во"
+msgstr ""
+
+#: tfrmexs.label1.caption
+msgctxt "tfrmexs.label1.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmexs.label2.caption
+msgid "Файл"
+msgstr ""
+
+#: tfrmexs.label3.caption
+msgctxt "tfrmexs.label3.caption"
+msgid "Оборудование"
+msgstr ""
+
+#: tfrmexs.label4.caption
+msgctxt "tfrmexs.label4.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmexs.tabsheet1.caption
+msgctxt "tfrmexs.tabsheet1.caption"
+msgid "Запись"
+msgstr ""
+
+#: tfrmexs.tabsheet2.caption
+msgctxt "tfrmexs.tabsheet2.caption"
+msgid "Дети"
+msgstr ""
+
+#: tfrmexs.tabsheet3.caption
+msgid "Уроки"
+msgstr ""
+
+#: tfrmlangs.caption
+msgctxt "tfrmlangs.caption"
+msgid "Языки"
+msgstr ""
+
+#: tfrmlangs.dbgrid1.columns[0].title.caption
+msgctxt "tfrmlangs.dbgrid1.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlangs.dbgrid1.columns[1].title.caption
+msgctxt "tfrmlangs.dbgrid1.columns[1].title.caption"
+msgid "Язык"
+msgstr ""
+
+#: tfrmlesscreator.btinex.hint
+msgid "Добавить упражнение в урок"
+msgstr ""
+
+#: tfrmlesscreator.btoutch.hint
+msgid "Удалить ребенка из урока"
+msgstr ""
+
+#: tfrmlesscreator.btoutex.hint
+msgid "Удалить упражнение из урока"
+msgstr ""
+
+#: tfrmlesscreator.caption
+msgid "Формирование занятия"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid1.columns[0].title.caption
+msgctxt "tfrmlesscreator.dbgrid1.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid1.columns[1].title.caption
+msgctxt "tfrmlesscreator.dbgrid1.columns[1].title.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid1.columns[2].title.caption
+msgctxt "tfrmlesscreator.dbgrid1.columns[2].title.caption"
+msgid "Час"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid1.columns[3].title.caption
+msgctxt "tfrmlesscreator.dbgrid1.columns[3].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[0].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[1].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[1].title.caption"
+msgid "less_id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[2].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[2].title.caption"
+msgid "child_id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[3].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[3].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[4].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[4].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid2.columns[5].title.caption
+msgctxt "tfrmlesscreator.dbgrid2.columns[5].title.caption"
+msgid "Лет"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid3.columns[0].title.caption
+msgctxt "tfrmlesscreator.dbgrid3.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid3.columns[1].title.caption
+msgctxt "tfrmlesscreator.dbgrid3.columns[1].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid3.columns[2].title.caption
+msgctxt "tfrmlesscreator.dbgrid3.columns[2].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid4.columns[0].title.caption
+msgctxt "tfrmlesscreator.dbgrid4.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid4.columns[1].title.caption
+msgctxt "tfrmlesscreator.dbgrid4.columns[1].title.caption"
+msgid "less_id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid4.columns[2].title.caption
+msgctxt "tfrmlesscreator.dbgrid4.columns[2].title.caption"
+msgid "ex_id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid4.columns[3].title.caption
+msgctxt "tfrmlesscreator.dbgrid4.columns[3].title.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid4.columns[4].title.caption
+msgid "№ п/п"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid5.columns[0].title.caption
+msgctxt "tfrmlesscreator.dbgrid5.columns[0].title.caption"
+msgid "id"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid5.columns[1].title.caption
+msgctxt "tfrmlesscreator.dbgrid5.columns[1].title.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid5.columns[2].title.caption
+msgid "Медиа"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid5.columns[3].title.caption
+msgctxt "tfrmlesscreator.dbgrid5.columns[3].title.caption"
+msgid "Оборудование"
+msgstr ""
+
+#: tfrmlesscreator.dbgrid5.columns[4].title.caption
+msgctxt "tfrmlesscreator.dbgrid5.columns[4].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlesscreator.dbgroupbox1.caption
+msgid "Урок"
+msgstr ""
+
+#: tfrmlesscreator.groupbox1.caption
+msgctxt "tfrmlesscreator.groupbox1.caption"
+msgid "Дети"
+msgstr ""
+
+#: tfrmlesscreator.groupbox2.caption
+msgctxt "tfrmlesscreator.groupbox2.caption"
+msgid "Упражнения"
+msgstr ""
+
+#: tfrmlesscreator.hint
+msgid "Включить ребенка в урок"
+msgstr ""
+
+#: tfrmlesscreator.label1.caption
+msgctxt "tfrmlesscreator.label1.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmlesscreator.label2.caption
+msgctxt "tfrmlesscreator.label2.caption"
+msgid "Время(час)"
+msgstr ""
+
+#: tfrmlesscreator.panel2.caption
+msgctxt "tfrmlesscreator.panel2.caption"
+msgid "Panel2"
+msgstr ""
+
+#: tfrmlesscreator.panel7.caption
+msgctxt "tfrmlesscreator.panel7.caption"
+msgid "Panel7"
+msgstr ""
+
+#: tfrmlesscreator.panel8.caption
+msgctxt "tfrmlesscreator.panel8.caption"
+msgid "Panel8"
+msgstr ""
+
+#: tfrmlessexecute.btplay.caption
+msgctxt "tfrmlessexecute.btplay.caption"
+msgid "Воспроизвести"
+msgstr ""
+
+#: tfrmlessexecute.caption
+msgid "Провеедение занятия"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid1.columns[0].title.caption
+msgctxt "tfrmlessexecute.dbgrid1.columns[0].title.caption"
+msgid "Дата"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid1.columns[1].title.caption
+msgctxt "tfrmlessexecute.dbgrid1.columns[1].title.caption"
+msgid "Час"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[0].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[0].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[1].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[1].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[2].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[2].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[3].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[3].title.caption"
+msgid "Имя род"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[4].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[4].title.caption"
+msgid "Фам род"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[5].title.caption
+msgid "path_photo"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid2.columns[6].title.caption
+msgctxt "tfrmlessexecute.dbgrid2.columns[6].title.caption"
+msgid "Лет"
+msgstr ""
+
+#: tfrmlessexecute.dbgrid3.columns[0].title.caption
+msgctxt "tfrmlessexecute.dbgrid3.columns[0].title.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmlessexecute.panel10.caption
+msgid "Panel10"
+msgstr ""
+
+#: tfrmlessexecute.panel2.caption
+msgctxt "tfrmlessexecute.panel2.caption"
+msgid "Panel2"
+msgstr ""
+
+#: tfrmlessexecute.panel3.caption
+msgid "Panel3"
+msgstr ""
+
+#: tfrmlessexecute.panel4.caption
+msgid "Panel4"
+msgstr ""
+
+#: tfrmlessexecute.panel5.caption
+msgid "Panel5"
+msgstr ""
+
+#: tfrmlessexecute.panel6.caption
+msgid "Panel6"
+msgstr ""
+
+#: tfrmlessexecute.panel7.caption
+msgctxt "tfrmlessexecute.panel7.caption"
+msgid "Panel7"
+msgstr ""
+
+#: tfrmlessexecute.panel8.caption
+msgctxt "tfrmlessexecute.panel8.caption"
+msgid "Panel8"
+msgstr ""
+
+#: tfrmlessexecute.panel9.caption
+msgid "Panel9"
+msgstr ""
+
 #: tfrmlessons.caption
 msgctxt "tfrmlessons.caption"
 msgid "Занятия"
 msgstr ""
 
 #: tfrmlessons.dbgrid1.columns[0].title.caption
+msgctxt "tfrmlessons.dbgrid1.columns[0].title.caption"
 msgid "id"
 msgstr ""
 
@@ -21,6 +587,37 @@ msgid "Время(час)"
 msgstr ""
 
 #: tfrmlessons.dbgrid1.columns[3].title.caption
+msgctxt "tfrmlessons.dbgrid1.columns[3].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlessons.dbgrid2.columns[0].title.caption
+msgctxt "tfrmlessons.dbgrid2.columns[0].title.caption"
+msgid "Имя"
+msgstr ""
+
+#: tfrmlessons.dbgrid2.columns[1].title.caption
+msgctxt "tfrmlessons.dbgrid2.columns[1].title.caption"
+msgid "Фамилия"
+msgstr ""
+
+#: tfrmlessons.dbgrid2.columns[2].title.caption
+msgctxt "tfrmlessons.dbgrid2.columns[2].title.caption"
+msgid "Коммент"
+msgstr ""
+
+#: tfrmlessons.dbgrid3.columns[0].title.caption
+msgctxt "tfrmlessons.dbgrid3.columns[0].title.caption"
+msgid "Наименование"
+msgstr ""
+
+#: tfrmlessons.dbgrid3.columns[1].title.caption
+msgctxt "tfrmlessons.dbgrid3.columns[1].title.caption"
+msgid "Оборудование"
+msgstr ""
+
+#: tfrmlessons.dbgrid3.columns[2].title.caption
+msgctxt "tfrmlessons.dbgrid3.columns[2].title.caption"
 msgid "Коммент"
 msgstr ""
 
@@ -35,7 +632,31 @@ msgid "Время(час)"
 msgstr ""
 
 #: tfrmlessons.tabsheet1.caption
+msgctxt "tfrmlessons.tabsheet1.caption"
 msgid "Запись"
+msgstr ""
+
+#: tfrmlessons.tabsheet2.caption
+msgctxt "tfrmlessons.tabsheet2.caption"
+msgid "Дети"
+msgstr ""
+
+#: tfrmlessons.tabsheet3.caption
+msgctxt "tfrmlessons.tabsheet3.caption"
+msgid "Упражнения"
+msgstr ""
+
+#: tfrmoptions.caption
+msgctxt "tfrmoptions.caption"
+msgid "Настройки"
+msgstr ""
+
+#: tfrmoptions.edpathdb.text
+msgid "edPathDB"
+msgstr ""
+
+#: tfrmoptions.label1.caption
+msgid "Путь к БД"
 msgstr ""
 
 #: tmainform.caption
@@ -47,6 +668,7 @@ msgid "Файлы"
 msgstr ""
 
 #: tmainform.menuitem10.caption
+msgctxt "tmainform.menuitem10.caption"
 msgid "Настройки"
 msgstr ""
 
@@ -63,14 +685,17 @@ msgid "Справочники"
 msgstr ""
 
 #: tmainform.menuitem3.caption
+msgctxt "tmainform.menuitem3.caption"
 msgid "Языки"
 msgstr ""
 
 #: tmainform.menuitem4.caption
+msgctxt "tmainform.menuitem4.caption"
 msgid "Дети"
 msgstr ""
 
 #: tmainform.menuitem5.caption
+msgctxt "tmainform.menuitem5.caption"
 msgid "Упражнения"
 msgstr ""
 

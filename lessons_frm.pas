@@ -14,6 +14,13 @@ type
 
   TfrmLessons = class(TForm)
     BitBtn1: TBitBtn;
+    DBGrid3: TDBGrid;
+    DBMemo3: TDBMemo;
+    DBMemo4: TDBMemo;
+    dsExs: TDataSource;
+    DBGrid2: TDBGrid;
+    DBMemo2: TDBMemo;
+    dsChilds: TDataSource;
     dsLessons: TDataSource;
     DBEdit1: TDBEdit;
     DBEdit2: TDBEdit;
@@ -23,6 +30,16 @@ type
     JSONPropStorage1: TJSONPropStorage;
     Label1: TLabel;
     Label2: TLabel;
+    qrChilds: TSQLQuery;
+    qrChildsccomment: TMemoField;
+    qrChildsfname: TStringField;
+    qrChildssname: TStringField;
+    qrExs: TSQLQuery;
+    qrExsecomment: TMemoField;
+    qrExsename: TStringField;
+    qrExsequipment: TMemoField;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
     tbLessonscomment: TMemoField;
     tbLessonsid: TLongintField;
     tbLessonsl_date: TStringField;
@@ -56,6 +73,9 @@ uses
 procedure TfrmLessons.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   tbLessons.Active := False;
+  qrChilds.Active := False;
+  qrExs.Active := False;
+
   CloseAction := caFree;
   frmLessons := nil;
 end;
@@ -69,8 +89,10 @@ end;
 
 procedure TfrmLessons.FormCreate(Sender: TObject);
 begin
-//  tbLessons.FileName := DMMyDB.dbFileName;
+  //  tbLessons.FileName := DMMyDB.dbFileName;
   tbLessons.Active := True;
+  qrChilds.Active := True;
+  qrExs.Active := True;
 end;
 
 procedure TfrmLessons.tbLessonsAfterPost(DataSet: TDataSet);

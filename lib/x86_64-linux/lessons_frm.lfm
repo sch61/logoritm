@@ -1,23 +1,23 @@
 object frmLessons: TfrmLessons
-  Left = 314
+  Left = 419
   Height = 416
-  Top = 212
-  Width = 473
+  Top = 164
+  Width = 604
   Caption = 'Занятия'
   ClientHeight = 416
-  ClientWidth = 473
+  ClientWidth = 604
+  SessionProperties = 'DBGrid1.Columns;DBGrid2.Columns;Height;Left;Position;Top;Width;DBGrid3.Columns'
+  LCLVersion = '3.99.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  SessionProperties = 'Left;Position;Top;Width;Height;DBGrid1.Columns'
-  LCLVersion = '3.0.0.1'
   object Panel1: TPanel
     Left = 0
     Height = 50
     Top = 0
-    Width = 473
+    Width = 604
     Align = alTop
     ClientHeight = 50
-    ClientWidth = 473
+    ClientWidth = 604
     TabOrder = 0
     object DBNavigator1: TDBNavigator
       Left = 17
@@ -39,7 +39,7 @@ object frmLessons: TfrmLessons
       TabOrder = 0
     end
     object BitBtn1: TBitBtn
-      Left = 365
+      Left = 496
       Height = 48
       Top = 1
       Width = 107
@@ -53,17 +53,17 @@ object frmLessons: TfrmLessons
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 120
-    Top = 296
-    Width = 473
+    Height = 168
+    Top = 248
+    Width = 604
     ActivePage = TabSheet1
     Align = alBottom
     TabIndex = 0
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Запись'
-      ClientHeight = 82
-      ClientWidth = 465
+      ClientHeight = 130
+      ClientWidth = 596
       object Label1: TLabel
         Left = 8
         Height = 16
@@ -100,22 +100,111 @@ object frmLessons: TfrmLessons
         TabOrder = 1
       end
       object DBMemo1: TDBMemo
-        Left = 252
-        Height = 82
+        Left = 288
+        Height = 130
         Top = 0
-        Width = 213
+        Width = 308
         Align = alRight
         DataField = 'comment'
         DataSource = dsLessons
         TabOrder = 2
       end
     end
+    object TabSheet2: TTabSheet
+      Caption = 'Дети'
+      ClientHeight = 130
+      ClientWidth = 596
+      object DBGrid2: TDBGrid
+        Left = 0
+        Height = 130
+        Top = 0
+        Width = 360
+        Align = alLeft
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'Имя'
+            FieldName = 'fname'
+          end        
+          item
+            Title.Caption = 'Фамилия'
+            FieldName = 'sname'
+          end        
+          item
+            Title.Caption = 'Коммент'
+            Visible = False
+            FieldName = 'ccomment'
+          end>
+        DataSource = dsChilds
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object DBMemo2: TDBMemo
+        Left = 360
+        Height = 130
+        Top = 0
+        Width = 236
+        Align = alClient
+        DataField = 'ccomment'
+        DataSource = dsChilds
+        TabOrder = 1
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Упражнения'
+      ClientHeight = 130
+      ClientWidth = 596
+      object DBGrid3: TDBGrid
+        Left = 0
+        Height = 130
+        Top = 0
+        Width = 264
+        Align = alLeft
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'Наименование'
+            FieldName = 'ename'
+          end        
+          item
+            Title.Caption = 'Оборудование'
+            FieldName = 'equipment'
+          end        
+          item
+            Title.Caption = 'Коммент'
+            FieldName = 'ecomment'
+          end>
+        DataSource = dsExs
+        TabOrder = 0
+      end
+      object DBMemo3: TDBMemo
+        Left = 264
+        Height = 130
+        Top = 0
+        Width = 150
+        Align = alLeft
+        DataField = 'equipment'
+        DataSource = dsExs
+        TabOrder = 1
+      end
+      object DBMemo4: TDBMemo
+        Left = 414
+        Height = 130
+        Top = 0
+        Width = 182
+        Align = alClient
+        DataField = 'ecomment'
+        DataSource = dsExs
+        TabOrder = 2
+      end
+    end
   end
   object DBGrid1: TDBGrid
     Left = 0
-    Height = 246
+    Height = 198
     Top = 50
-    Width = 473
+    Width = 604
     Align = alClient
     Color = clWindow
     Columns = <    
@@ -143,14 +232,14 @@ object frmLessons: TfrmLessons
   object dsLessons: TDataSource
     AutoEdit = False
     DataSet = tbLessons
-    Left = 300
-    Top = 64
+    Left = 368
+    Top = 8
   end
   object JSONPropStorage1: TJSONPropStorage
     StoredValues = <>
     JSONFileName = 'logoritm.json'
     Formatted = True
-    Left = 331
+    Left = 448
     Top = 8
   end
   object tbLessons: TSQLQuery
@@ -203,8 +292,8 @@ object frmLessons: TfrmLessons
     Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
     Params = <>
     Macros = <>
-    Left = 216
-    Top = 72
+    Left = 304
+    Top = 8
     object tbLessonsid: TLongintField
       FieldKind = fkData
       FieldName = 'id'
@@ -248,5 +337,181 @@ object frmLessons: TfrmLessons
       BlobType = ftMemo
       Transliterate = False
     end
+  end
+  object qrChilds: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'fname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'sname'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'ccomment'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'ml_date'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'ex_cnt'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    ReadOnly = True
+    SQL.Strings = (
+      'SELECT alc.fname, alc.sname,'
+      '       alc.ccomment'
+      'FROM view_alllc alc'
+      'WHERE'
+      '    alc.less_id = :id'
+      'ORDER BY sname, fname'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'id'
+        ParamType = ptInput
+        Size = 4
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 304
+    Top = 80
+    object qrChildsfname: TStringField
+      DisplayLabel = 'Имя'
+      FieldKind = fkData
+      FieldName = 'fname'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+    object qrChildssname: TStringField
+      DisplayLabel = 'Фамилия'
+      FieldKind = fkData
+      FieldName = 'sname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+    object qrChildsccomment: TMemoField
+      DisplayLabel = 'Коммент'
+      FieldKind = fkData
+      FieldName = 'ccomment'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object dsChilds: TDataSource
+    DataSet = qrChilds
+    Left = 361
+    Top = 80
+  end
+  object qrExs: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'ename'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'equipment'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'ecomment'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    Database = DMmydb.dbConn
+    Transaction = DMmydb.dbTrans
+    ReadOnly = True
+    SQL.Strings = (
+      'SELECT ale.ename,'
+      '       ale.equipment,'
+      '       ale.ecomment'
+      'FROM view_allle ale'
+      'WHERE'
+      '     ale.less_id = :id'
+      'ORDER BY ename'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    DataSource = dsLessons
+    Left = 424
+    Top = 80
+    object qrExsename: TStringField
+      DisplayLabel = 'Наименование'
+      FieldKind = fkData
+      FieldName = 'ename'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qrExsequipment: TMemoField
+      DisplayLabel = 'Оборудование'
+      FieldKind = fkData
+      FieldName = 'equipment'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object qrExsecomment: TMemoField
+      DisplayLabel = 'Коммент'
+      FieldKind = fkData
+      FieldName = 'ecomment'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object dsExs: TDataSource
+    DataSet = qrExs
+    Left = 471
+    Top = 80
   end
 end

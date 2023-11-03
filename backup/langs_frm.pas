@@ -22,8 +22,7 @@ type
     tbLangs: TSQLQuery;
     tbLangsid: TLongintField;
     tbLangslname: TStringField;
-    procedure DBNavigator1BeforeAction(Sender: TObject; Button: TDBNavButtonType
-      );
+    procedure DBNavigator1BeforeAction(Sender: TObject; Button: TDBNavButtonType);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
   private
@@ -51,10 +50,9 @@ begin
   frmLangs := nil;
 end;
 
-procedure TfrmLangs.DBNavigator1BeforeAction(Sender: TObject;
-  Button: TDBNavButtonType);
+procedure TfrmLangs.DBNavigator1BeforeAction(Sender: TObject; Button: TDBNavButtonType);
 begin
-    if (Button = nbEdit) or (Button = nbInsert) then
+  if (Button = nbEdit) or (Button = nbInsert) then
     DBGrid1.SetFocus;
 end;
 

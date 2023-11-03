@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, SQLDB, SQLite3DS, DB, memds, Forms, Controls, Graphics,
   Dialogs, ExtCtrls, DBCtrls, DBGrids, ComCtrls, StdCtrls, Buttons,
-  IniPropStorage, DBExtCtrls, JSONPropStorage, ExtDlgs;
+  IniPropStorage, DBExtCtrls, JSONPropStorage, ExtDlgs, DateUtils;
 
 type
 
@@ -15,6 +15,11 @@ type
 
   TfrmChilds = class(TForm)
     BitBtn1: TBitBtn;
+    DBGrid2: TDBGrid;
+    DBGrid3: TDBGrid;
+    DBMemo2: TDBMemo;
+    DBMemo3: TDBMemo;
+    dsLess: TDataSource;
     DBLookupComboBox1: TDBLookupComboBox;
     dsLangs: TDataSource;
     dsChilds: TDataSource;
@@ -29,6 +34,7 @@ type
     DBGroupBox2: TDBGroupBox;
     DBMemo1: TDBMemo;
     DBNavigator1: TDBNavigator;
+    dsExs: TDataSource;
     imgPhoto: TImage;
     JSONPropStorage1: TJSONPropStorage;
     Label1: TLabel;
@@ -39,6 +45,23 @@ type
     Label6: TLabel;
     Label7: TLabel;
     dlgPhoto: TOpenPictureDialog;
+    qrExsccomment: TMemoField;
+    qrExschild_id: TLongintField;
+    qrExsecomment: TMemoField;
+    qrExsename: TStringField;
+    qrExsex_cnt: TLargeintField;
+    qrExsex_id: TLongintField;
+    qrExsfname: TStringField;
+    qrExsml_date: TStringField;
+    qrExssname: TStringField;
+    qrLess: TSQLQuery;
+    qrExs: TSQLQuery;
+    qrLesscomment: TMemoField;
+    qrLessid: TAutoIncField;
+    qrLessl_date: TStringField;
+    qrLessl_hour: TLongintField;
+    tbChildlname: TStringField;
+    tbChildsAge: TFloatField;
     tbChildsbd: TDateField;
     tbChildscomments: TMemoField;
     tbChildsfname: TStringField;
@@ -63,6 +86,7 @@ type
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure tbChildsAfterScroll(DataSet: TDataSet);
+    procedure tbChildsCalcFields(DataSet: TDataSet);
   private
 
   public
@@ -85,6 +109,8 @@ procedure TfrmChilds.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   lu_langs.Active := False;
   tbChilds.Active := False;
+  qrLess.Active:=False;
+  qrExs.Active:=False;
   CloseAction := caFree;
   frmChilds := nil;
 end;
@@ -117,18 +143,25 @@ procedure TfrmChilds.FormCreate(Sender: TObject);
 begin
   lu_langs.Active := True;
   tbChilds.Active := True;
+  qrLess.Active:=True;
+  qrExs.Active:=True;
 end;
 
 procedure TfrmChilds.tbChildsAfterScroll(DataSet: TDataSet);
 var
   s: string;
 begin
-//  Showmessage('aferScroll');
+  //  Showmessage('aferScroll');
   s := tbChildspath_photo.Value;
   if s.Length > 0 then
     imgPhoto.Picture.LoadFromFile(s)
   else
     imgPhoto.Picture.Clear;
+end;
+
+procedure TfrmChilds.tbChildsCalcFields(DataSet: TDataSet);
+begin
+  tbChildsage.Value := YearSpan(Now, tbChildsbd.Value);
 end;
 
 end.

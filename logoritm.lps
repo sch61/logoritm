@@ -7,10 +7,10 @@
       <Unit>
         <Filename Value="logoritm.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="10"/>
-        <CursorPos Y="27"/>
-        <UsageCount Value="129"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="3" Y="34"/>
+        <UsageCount Value="172"/>
       </Unit>
       <Unit>
         <Filename Value="main_frm.pas"/>
@@ -18,10 +18,10 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="102"/>
-        <CursorPos X="23" Y="111"/>
-        <UsageCount Value="129"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="44"/>
+        <CursorPos X="28" Y="59"/>
+        <UsageCount Value="172"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -31,10 +31,9 @@
         <ComponentName Value="DMmydb"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="41"/>
-        <CursorPos X="27" Y="47"/>
-        <UsageCount Value="129"/>
+        <TopLine Value="27"/>
+        <CursorPos X="9" Y="27"/>
+        <UsageCount Value="172"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -44,10 +43,10 @@
         <ComponentName Value="frmChilds"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="62"/>
-        <CursorPos X="83" Y="62"/>
-        <UsageCount Value="129"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="140"/>
+        <CursorPos Y="160"/>
+        <UsageCount Value="172"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -57,11 +56,10 @@
         <ComponentName Value="frmLessons"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="20"/>
-        <CursorPos X="21" Y="32"/>
-        <UsageCount Value="113"/>
+        <TopLine Value="75"/>
+        <CursorPos X="25" Y="77"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -71,10 +69,10 @@
         <ComponentName Value="frmLangs"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="46"/>
-        <CursorPos X="12" Y="58"/>
-        <UsageCount Value="91"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="58"/>
+        <UsageCount Value="134"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -84,10 +82,10 @@
         <ComponentName Value="frmExs"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="85"/>
-        <CursorPos Y="86"/>
-        <UsageCount Value="81"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="108"/>
+        <CursorPos Y="116"/>
+        <UsageCount Value="124"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -97,10 +95,37 @@
         <ComponentName Value="frmLessCreator"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="77"/>
-        <CursorPos Y="81"/>
-        <UsageCount Value="66"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="3"/>
+        <CursorPos X="14" Y="10"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="lessexec_frm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLessExecute"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="120"/>
+        <CursorPos X="25" Y="135"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="options_frm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="60"/>
+        <CursorPos X="6" Y="80"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -111,35 +136,35 @@
         <UnitName Value="childs_frm"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="48" Y="5"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/wincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7432"/>
         <CursorPos X="47" Y="7439"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/sysutils/sysinth.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="80"/>
         <CursorPos X="4" Y="90"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/customform.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2387"/>
         <CursorPos Y="2393"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2961"/>
         <CursorPos Y="2970"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/lclmessageglue.pas"/>
@@ -147,21 +172,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="102"/>
         <CursorPos Y="118"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/interfaces/gtk2/gtk2proc.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3766"/>
         <CursorPos X="23" Y="3766"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/dbcustomnavigator.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="472"/>
         <CursorPos Y="482"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-db/src/sqldb/sqldb.pp"/>
@@ -169,131 +194,41 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="223"/>
         <CursorPos Y="45"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../App/Lazarus/lcl/jsonpropstorage.pas"/>
+        <UnitName Value="JSONPropStorage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos Y="120"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../App/Lazarus/ide/lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="150"/>
+        <CursorPos X="13" Y="154"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../App/Lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="912"/>
+        <CursorPos Y="922"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../App/Lazarus/lcl/lclintf.pas"/>
+        <UnitName Value="LCLIntf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="74"/>
+        <CursorPos X="10" Y="84"/>
+        <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="98" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="99" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="101" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="103" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="107" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="99" Column="43" TopLine="95"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="100" Column="43" TopLine="96"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="103" Column="43" TopLine="99"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="104" Column="43" TopLine="100"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="109" Column="43" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="110" Column="43" TopLine="106"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="115" Column="43" TopLine="111"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="116" Column="43" TopLine="112"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="112" Column="3" TopLine="107"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="149" Column="12" TopLine="131"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="125" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="126" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="127" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="128" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="129" Column="3" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="142" Column="12" TopLine="126"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="139" Column="3" TopLine="134"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="159" TopLine="143"/>
-      </Position>
-      <Position>
-        <Filename Value="lesscreator_frm.pas"/>
-        <Caret Line="161" TopLine="145"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="54" Column="72" TopLine="54"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="69" Column="7" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="109" Column="37" TopLine="102"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="112" Column="12" TopLine="95"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="99" Column="16" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="main_frm.pas"/>
-        <Caret Line="9" Column="37"/>
-      </Position>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
