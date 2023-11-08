@@ -112,11 +112,10 @@ begin
   end;
   inf := TVersionInfo.Create;
   inf.Load(HINSTANCE);
-  statBar.Panels[0].Text := 'Версия ' +
-    IntToStr(inf.FixedInfo.FileVersion[0]) +
-    '.' + IntToStr(inf.FixedInfo.FileVersion[1]) +
-    '.' + IntToStr(inf.FixedInfo.FileVersion[2]) +
-    '.' + IntToStr(inf.FixedInfo.FileVersion[3]);
+  statBar.Panels[0].Text := 'Версия ' + IntToStr(inf.FixedInfo.FileVersion[0]) +
+    '.' + IntToStr(inf.FixedInfo.FileVersion[1]) + '.' +
+    IntToStr(inf.FixedInfo.FileVersion[2]) + '.' +
+    IntToStr(inf.FixedInfo.FileVersion[3]);
   inf.Free;
   //  Showmessage(s);
 end;

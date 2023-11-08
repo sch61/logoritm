@@ -7,10 +7,11 @@
       <Unit>
         <Filename Value="logoritm.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="20"/>
-        <CursorPos X="3" Y="34"/>
-        <UsageCount Value="172"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="23"/>
+        <CursorPos X="6" Y="29"/>
+        <UsageCount Value="177"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main_frm.pas"/>
@@ -18,10 +19,10 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="44"/>
         <CursorPos X="28" Y="59"/>
-        <UsageCount Value="172"/>
+        <UsageCount Value="177"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,7 +34,7 @@
         <ResourceBaseClass Value="DataModule"/>
         <TopLine Value="27"/>
         <CursorPos X="9" Y="27"/>
-        <UsageCount Value="172"/>
+        <UsageCount Value="177"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -44,9 +45,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="140"/>
-        <CursorPos Y="160"/>
-        <UsageCount Value="172"/>
+        <TopLine Value="80"/>
+        <CursorPos X="48" Y="88"/>
+        <UsageCount Value="177"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -59,7 +60,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="75"/>
         <CursorPos X="25" Y="77"/>
-        <UsageCount Value="156"/>
+        <UsageCount Value="161"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -72,7 +73,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="45"/>
         <CursorPos Y="58"/>
-        <UsageCount Value="134"/>
+        <UsageCount Value="139"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -85,7 +86,7 @@
         <EditorIndex Value="4"/>
         <TopLine Value="108"/>
         <CursorPos Y="116"/>
-        <UsageCount Value="124"/>
+        <UsageCount Value="129"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -98,7 +99,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="3"/>
         <CursorPos X="14" Y="10"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="114"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -108,10 +109,11 @@
         <ComponentName Value="frmLessExecute"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="120"/>
-        <CursorPos X="25" Y="135"/>
-        <UsageCount Value="60"/>
+        <TopLine Value="66"/>
+        <CursorPos X="32" Y="69"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -121,11 +123,10 @@
         <ComponentName Value="frmOptions"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="7"/>
         <TopLine Value="60"/>
-        <CursorPos X="6" Y="80"/>
-        <UsageCount Value="29"/>
+        <CursorPos X="54" Y="67"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -136,35 +137,35 @@
         <UnitName Value="childs_frm"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="48" Y="5"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/wincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7432"/>
         <CursorPos X="47" Y="7439"/>
-        <UsageCount Value="1"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/sysutils/sysinth.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="80"/>
         <CursorPos X="4" Y="90"/>
-        <UsageCount Value="1"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/customform.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2387"/>
         <CursorPos Y="2393"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2961"/>
         <CursorPos Y="2970"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/lclmessageglue.pas"/>
@@ -172,21 +173,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="102"/>
         <CursorPos Y="118"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/interfaces/gtk2/gtk2proc.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3766"/>
         <CursorPos X="23" Y="3766"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/3.0.0/lcl/include/dbcustomnavigator.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="472"/>
         <CursorPos Y="482"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-db/src/sqldb/sqldb.pp"/>
@@ -194,7 +195,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="223"/>
         <CursorPos Y="45"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="../../../App/Lazarus/lcl/jsonpropstorage.pas"/>
@@ -202,7 +203,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos Y="120"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="../../../App/Lazarus/ide/lazarus.pp"/>
@@ -210,14 +211,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="150"/>
         <CursorPos X="13" Y="154"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="../../../App/Lazarus/lcl/include/customform.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="912"/>
         <CursorPos Y="922"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="../../../App/Lazarus/lcl/lclintf.pas"/>
@@ -225,10 +226,35 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="74"/>
         <CursorPos X="10" Y="84"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="5">
+      <Position>
+        <Filename Value="options_frm.pas"/>
+        <Caret Line="67" Column="68" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="logoritm.lpr"/>
+        <Caret Line="43" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="childs_frm.pas"/>
+        <Caret Line="88" Column="48" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="logoritm.lpr"/>
+        <Caret Line="43" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="lessexec_frm.pas"/>
+        <Caret Line="84" Column="3" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="logoritm.lpr"/>
+        <Caret Line="29" Column="6" TopLine="23"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

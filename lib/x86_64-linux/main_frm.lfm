@@ -1,10 +1,10 @@
 object MainForm: TMainForm
   Left = 371
-  Height = 6
+  Height = 1
   Top = 159
   Width = 810
   Caption = 'Логоритмика'
-  ClientHeight = 6
+  ClientHeight = 1
   ClientWidth = 810
   Menu = MainMenu1
   SessionProperties = 'Caption;Left;Position;Top;Width;Height'
@@ -28,7 +28,7 @@ object MainForm: TMainForm
   object statBar: TStatusBar
     Left = 0
     Height = 18
-    Top = -12
+    Top = -17
     Width = 810
     Panels = <    
       item
